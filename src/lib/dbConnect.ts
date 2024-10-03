@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose= require("mongoose");
 
 type connectionObject = {
   isConnected?: number;
@@ -21,3 +21,6 @@ async function dbConnect(): Promise<void> {
     process.exit();
   }
 }
+
+
+export default dbConnect;
